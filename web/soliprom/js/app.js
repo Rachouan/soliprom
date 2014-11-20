@@ -34,6 +34,7 @@ $(function ($) {
 
         $(".intro").remove();
         $("#intro").removeClass("blur");
+        $("body").removeClass("overflow");
 
         if(language != "nothing"){
 
