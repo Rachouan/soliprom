@@ -178,10 +178,17 @@ body{
 	padding-bottom: 40px;
 }
 #content section header.title h1{
+	display: block;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	margin-bottom: 10px;
 	color: #2A2A2A;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#content section header.title h1.case{
+	padding-top: 85px;
+	background-image: url(../images/icons/briefcase.png);
 }
 #content section header.title h2{
 	font-weight: lighter;
@@ -221,6 +228,7 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 60px;
+	margin-bottom: 60px;
 }
 #content section ul.projects li{
 	display: block;
@@ -402,36 +410,32 @@ footer p.madeby span{
     transition: all .2s ease-in;
 }
 
-.languages {
-   
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px){
+	
+	footer header{
+		float: left;
+		width: 100vw;
+		font-size: .8em;
+	}
+	.center{
+		float: left;
+		width: 100vw;
+	}
+	footer p.madeby{
+		float: left;
+		width: 100vw;
+		font-size: .6em;
+	}
+	
+
 }
-
-/* animation */
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-
