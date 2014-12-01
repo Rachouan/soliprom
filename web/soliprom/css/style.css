@@ -19,6 +19,7 @@ body{
     filter: blur(10px); 
 }
 .center{
+	float: none;
 	width: 1024px;
 	margin: 0 auto;
 }
@@ -58,6 +59,12 @@ body{
 	display: inline-block;
 	font-size: 1em;
 	margin-top: 10px;
+	color: #ffffff;
+}
+#intro h1.company{
+	font-weight: lighter;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 	color: #ffffff;
 }
 #intro nav{
@@ -164,6 +171,7 @@ body{
 	float: left;
 	margin-top: 100vh;
 	width: 100vw;
+	padding-bottom: 80px;
 	background-color: #ffffff;
 }
 #content section{
@@ -185,6 +193,7 @@ body{
 	color: #2A2A2A;
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: 40px 40px;
 }
 #content section header.title h1.case{
 	padding-top: 85px;
@@ -268,19 +277,75 @@ body{
 footer{
 	float: left;
 	width: 100vw;
-	padding: 40px 0px;
+	padding-top: 20px;
 	background-color: #263248;
 }
 footer header{
 	margin: 0 auto;
 	width: 700;
 	padding-top: 40px;
-	padding-bottom: 80px;
+	padding-bottom: 10px;
 	color: white;
 	text-align: center;
-	font-weight: lighter;
-	font-size: 1em;
 }
+footer header h1{
+	font-size: 1.5em;
+	font-weight: lighter;
+}
+footer ul.profile{
+	display: block;
+	float: left;
+	margin: 20px;
+	padding-bottom: 40px;
+	float: left;
+	width: 904px/3;
+	background-color: rgba(0,0,0,.3);
+	border-radius: .5em;
+	overflow: hidden;
+}
+footer ul.profile img{
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+footer ul.profile li{
+	display: block;
+	color: white;
+	padding: 10px 20px;
+}
+footer ul.profile li.mail{
+	display: block;
+	color: white;
+	padding: 10px 0px;
+}
+footer ul.profile li a{
+	color: rgba(225,225,225,.7);
+	text-decoration: none;
+	font-weight: lighter;
+	padding-left: 30px;
+	background-repeat: no-repeat;
+	background-position: 0px 1px;
+	background-size: contain;
+}
+footer ul.profile li a.mail{
+	background-image: url(../images/icons/envolppe.png);
+}
+footer ul.profile li a.link{
+	background-image: url(../images/icons/link.png);
+}
+footer ul.profile li.profile_img{
+	text-align: center;
+	width: 290px;
+	margin: 0px;
+	padding: 0px;
+}
+footer div{
+	width: 100%;
+	float: left;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
 footer p.madeby{
 	margin: 0 auto;
 	display: block;
@@ -314,6 +379,40 @@ footer p.madeby span{
 
 
 
+
+/*DETAIL*/
+
+section.detail{
+	z-index: 9999;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(225,225,225,.9);
+}
+section.detail div{
+	position: fixed;
+	width: 800px;
+	height: 500px;
+	top: 50%;
+	left: 50%;
+	margin-left: -400px;
+	margin-top: -250px;
+	background-color: white;
+}
+section.detail div aside{
+	float: left;
+	width: 260px;
+	padding: 20px;
+
+}
+section.detail div img{
+	float: left;
+	width: 500px;
+}
+
+/*END DETAIL*/
 
 
 
