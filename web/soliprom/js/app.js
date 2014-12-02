@@ -49,7 +49,7 @@ $(function ($) {
 
 
           if(scroll == false){
-              var html = jQuery('html'); // it would make more sense to apply this to body, but IE7 won't have that
+              var html = jQuery('html');
               html.data('scroll-position', scrollPosition);
               html.data('previous-overflow', html.css('overflow'));
               html.css('overflow', 'hidden');
@@ -62,9 +62,6 @@ $(function ($) {
             html.css('overflow', html.data('previous-overflow'));
             window.scrollTo(scrollPosition[0], scrollPosition[1]);
           }
-
-
-          // un-lock scroll position
          
     }
 
