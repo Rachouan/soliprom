@@ -241,6 +241,7 @@ body{
 }
 #content section ul.projects li{
 	display: block;
+	position: relative;
 	float: left;
 	width: 300px;
 	height: 300px;
@@ -249,6 +250,37 @@ body{
 	background-color: rgba(0,0,0,.3);
 	cursor: pointer;
 	text-align: center;
+}
+#content section ul.projects li img{
+	width: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: .6;
+}
+
+#content section ul.projects li p{
+	position: absolute;
+	width: 150px;
+	padding:10px 0px;
+	border: 2px solid white;
+	left: 50%;
+	top: 50%;
+	margin-left: -75px;
+	margin-top: -15px;
+	opacity: 1;
+	border-radius: 2em;
+	color: white;
+	background-color: rgba(225,225,225,.5);
+
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+#content section ul.projects li:hover{
 }
 #content section ul.project_selection li:hover{
 	color: white;
@@ -319,13 +351,34 @@ footer ul.profile li.mail{
 	padding: 10px 0px;
 }
 footer ul.profile li a{
+	display: block;
 	color: rgba(225,225,225,.7);
 	text-decoration: none;
 	font-weight: lighter;
-	padding-left: 30px;
+	padding-left: 20px;
 	background-repeat: no-repeat;
-	background-position: 0px 1px;
-	background-size: contain;
+	background-position: 0px 5px;
+	background-size: 15px 15px;
+
+
+
+	
+	-webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+
+}
+footer ul.profile li a:hover{
+	
+	color: #FF8598;
+
+	-moz-transform: translateX(5px);
+	-webkit-transform: translateX(5px);
+	-o-transform: translateX(5px);
+	-ms-transform: translateX(5px);
+	transform: translateX(5px);
+
 }
 footer ul.profile li a.mail{
 	background-image: url(../images/icons/envolppe.png);
@@ -363,6 +416,16 @@ footer p.madeby a{
 	text-decoration: none;
 	margin-left: 5px;
 	margin-right: 5px;
+
+
+	-webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+footer p.madeby a:hover{
+
+	color: #FF8598;
 }
 footer p.madeby span{
 	color: #FF8598;
@@ -389,9 +452,27 @@ section.detail{
 	top: 0;
 	width: 100vw;
 	height: 100vh;
-	background-color: rgba(225,225,225,.9);
+	opacity: 0;
+
+
+	-webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
 }
-section.detail div{
+section.show{
+	display: block;
+	opacity: 1;
+}
+section.detail div#filter{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: rgba(225,225,225,.5);
+}
+section.detail div.detail_container{
 	position: fixed;
 	width: 800px;
 	height: 500px;
@@ -401,13 +482,13 @@ section.detail div{
 	margin-top: -250px;
 	background-color: white;
 }
-section.detail div aside{
+section.detail div.detail_container aside{
 	float: left;
 	width: 260px;
 	padding: 20px;
 
 }
-section.detail div img{
+section.detail div.detail_container img{
 	float: left;
 	width: 500px;
 }
